@@ -5,7 +5,7 @@ exports.handler = async (event) => {
   const { city } = queryStringParameters;
 
   try {
-    const apiKey = process.env.OPEN_WEATHER_MAP_API_KEY; // Accessing environment variable
+    const apiKey = process.env.OPEN_WEATHER_API_KEY; // Accessing environment variable
     const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     console.log('Requesting weather data from:', apiUrl);
